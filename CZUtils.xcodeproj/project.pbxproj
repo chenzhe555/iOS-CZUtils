@@ -13,6 +13,8 @@
 		947A375622604172004BF175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947A375522604172004BF175 /* Assets.xcassets */; };
 		947A375922604172004BF175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947A375722604172004BF175 /* LaunchScreen.storyboard */; };
 		947A375C22604172004BF175 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A375B22604172004BF175 /* main.m */; };
+		94BD939C22744FF4005DDDAA /* CZCaptureException.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BD939B22744FF4005DDDAA /* CZCaptureException.m */; };
+		94BD93A32275159B005DDDAA /* CZNavigationRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BD93A22275159B005DDDAA /* CZNavigationRouter.m */; };
 		CB07DE7D1C329C1F15B71B6D /* libPods-CZUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF40985066AFFBD5AF83147 /* libPods-CZUtils.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,10 @@
 		947A375822604172004BF175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947A375A22604172004BF175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		947A375B22604172004BF175 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94BD939A22744FF4005DDDAA /* CZCaptureException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZCaptureException.h; sourceTree = "<group>"; };
+		94BD939B22744FF4005DDDAA /* CZCaptureException.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZCaptureException.m; sourceTree = "<group>"; };
+		94BD93A12275159B005DDDAA /* CZNavigationRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZNavigationRouter.h; sourceTree = "<group>"; };
+		94BD93A22275159B005DDDAA /* CZNavigationRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZNavigationRouter.m; sourceTree = "<group>"; };
 		CDF40985066AFFBD5AF83147 /* libPods-CZUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CZUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,7 @@
 		947A374B22604170004BF175 /* CZUtils */ = {
 			isa = PBXGroup;
 			children = (
+				94BD939822744FDF005DDDAA /* classes */,
 				947A374C22604170004BF175 /* AppDelegate.h */,
 				947A374D22604170004BF175 /* AppDelegate.m */,
 				947A374F22604170004BF175 /* ViewController.h */,
@@ -93,6 +100,33 @@
 				947A375B22604172004BF175 /* main.m */,
 			);
 			path = CZUtils;
+			sourceTree = "<group>";
+		};
+		94BD939822744FDF005DDDAA /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				94BD93A02275157A005DDDAA /* router */,
+				94BD939922744FDF005DDDAA /* exception */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		94BD939922744FDF005DDDAA /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				94BD939A22744FF4005DDDAA /* CZCaptureException.h */,
+				94BD939B22744FF4005DDDAA /* CZCaptureException.m */,
+			);
+			path = exception;
+			sourceTree = "<group>";
+		};
+		94BD93A02275157A005DDDAA /* router */ = {
+			isa = PBXGroup;
+			children = (
+				94BD93A12275159B005DDDAA /* CZNavigationRouter.h */,
+				94BD93A22275159B005DDDAA /* CZNavigationRouter.m */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +223,9 @@
 			files = (
 				947A375122604170004BF175 /* ViewController.m in Sources */,
 				947A375C22604172004BF175 /* main.m in Sources */,
+				94BD93A32275159B005DDDAA /* CZNavigationRouter.m in Sources */,
 				947A374E22604170004BF175 /* AppDelegate.m in Sources */,
+				94BD939C22744FF4005DDDAA /* CZCaptureException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
