@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "CZUtils"
+  s.name         = "CZUtil"
   s.version      = "0.0.1"
   s.summary      = "iOS-CZUtils"
   s.description  = "iOS-CZUtils类"
