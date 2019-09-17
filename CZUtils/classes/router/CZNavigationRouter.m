@@ -16,7 +16,7 @@
     static id router = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        router = [[self class] init];
+        router = [[[self class] alloc] init];
     });
     return router;
 }
